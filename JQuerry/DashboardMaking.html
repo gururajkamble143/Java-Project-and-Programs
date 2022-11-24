@@ -1,0 +1,123 @@
+<html>
+    <style>
+        	body
+	{
+		background:black;
+	}
+	table
+	{
+		margin-top:50px;
+		margin-left:370px;
+		border:4px solid white;
+	}
+	th
+	{
+		border-left:4px solid white;
+		border-bottom:2px solid white;
+		color:orange;
+		width:200px;
+	}
+	tr
+	{
+		height:50px;
+	}
+	.c1
+	{
+		background:gray;
+		color:rgb(11, 11, 71);
+		border-left:none;
+		font-size:20px;
+	}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $('th').mouseenter(function()
+            {
+                //$(this).addClass('c1');
+                $('#showImg').empty();
+                var id = $(this).attr('id');
+                if(id=='Dragon Ball Z')
+                {
+                    $('#showImg').append("<img src='Dragon Ball z.png' height='350px' width='400px'/>");
+                    $('#description').html('With the help of the powerful Dragonballs, a team of fighters led by the saiyan warrior<br> Goku defend the planet earth from extraterrestrial enemies. Son Goku, the worlds most<br> powerful fighter and guardian of justice, must protect the Earth from the Saiyan Warriors<br> working under the tyrannical space warlord Frieza.');
+                }
+                if(id=='Naruto')
+                {
+                    $('#showImg').append("<img src='Naruto.png' height='350px' width='400px'/>");
+                    $('#description').html('It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers<br> and dreams of becoming the Hokage, the leader of his village. The story is told in two<br> parts – the first set in Narutos pre-teen years, and the second in his teens.');
+                }
+                if(id=='One-Piece')
+                {
+                    $('#showImg').append("<img src='One Piece.png' height='350px' width='400px'/>");
+                    $('#description').html('The series focuses on Monkey D. Luffy, a young man made of rubber, who, inspired by his<br> childhood idol, the powerful pirate Red-Haired Shanks, sets off on a journey from the<br> East Blue Sea to find the mythical treasure, the One Piece, and proclaim himself the King of<br> the Pirates.');
+                }
+                if(id=='Death Note')
+                {
+                    $('#showImg').append("<img src='Death Note.png' height='350px' width='400px'/>");
+                    $('#description').html('Based on the famous Japanese manga written by Tsugumi Ohba and Takeshi Obata, Death<br>Note follows a high school student who comes across a supernatural notebook, realizing it<br> holds within it a great power; if the owner inscribes someones name into it while picturing <br>their face, he or she will die');
+                }
+                if(id=='Attack on TITAN')
+                {
+                    $('#showImg').append("<img src='Attack on TITAN.png' height='350px' width='400px'/>");
+                    $('#description').html('Eren Yeager is determined to help save humanity when titans re-appear and being to<br> feast on human flesh.');
+                }
+                if(id=='BLEACH')
+                {
+                    $('#showImg').append("<img src='BLEACH.png' height='350px' width='400px'/>");
+                    $('#description').html('High school student Ichigo Kurosaki, who has the ability to see ghosts, gains soul<br> reaper powers from Rukia Kuchiki and sets out to save the world from "Hollows". High<br> school student Kurosaki Ichigo is unlike any ordinary kid. Why? Because he can see ghosts.');
+                }
+                if(id=='Black Clover')
+                {
+                    $('#showImg').append("<img src='Black Clover.png' height='350px' width='400px'/>");
+                    $('#description').html('The story follows Asta, a young boy born without any magic power. This is unknown<br> to the world he lives in because seemingly everyone has some sort of magic power. With his<br> fellow mages from the Black Bulls, Asta plans to become the next Wizard King.');
+                }
+            })
+            $('th').mouseleave(function()
+            {
+                $(this).removeClass('c1');
+            })
+        })
+      </script>
+<body>
+    <table>
+        <tr>
+            <td colspan='2' style='border-bottom:2px solid white'>
+            <marquee style='color:red;font-weight:bold;font-size:30px;font-family: arial;'scrollamount=10 behavior='alternate'>All About ANIME
+            </marquee>
+            </td>
+        </tr>
+        <tr>
+            <td style='border-bottom:2px solid white' rowspan='7' id='showImg'> 
+                <img src='Dragon Ball z.png' height='350px' width='400px'/>
+            </td>
+            <th id='Dragon Ball Z'>Dragon Ball Z    </th>
+        </tr>
+        <tr>	
+            <th id='Naruto'>Naruto	</th>
+        </tr>
+        <tr>
+            <th id='One-Piece'>One-Piece	</th>
+        </tr>
+        <tr>
+            <th id='Death Note'>Death Note	</th>
+        </tr>
+        <tr>
+            <th id='Attack on TITAN'>Attack on TITAN	</th>
+        </tr>
+        <tr>
+            <th id='BLEACH'>BLEACH	</th>
+        </tr>
+        <tr>
+            <th id='Black Clover'>Black Clover</th>
+        </tr>
+        <tr style='height:100px'>
+            <td colspan='2' style='background:black;font-size:15px;font-weight:bold;color:white' id='description'>
+                With the help of the powerful Dragonballs, a team of fighters led by the saiyan warrior<br> Goku defend the planet earth from extraterrestrial enemies. Son Goku, the worlds most<br> powerful fighter and guardian of justice, must protect the Earth from the Saiyan Warriors<br> working under the tyrannical space warlord Frieza.
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

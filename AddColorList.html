@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="hed" style="text-align: center; color: pink;">Welcome to RainBow World</h1>
+
+    <button onclick="colors()" style="margin-left: 590px; color: blue;">Add Color</button>
+    <button onclick="numbers()" style="margin-left: 100; color: blue;">Add Number</button>
+
+    <ul id="list1" style="margin-left: 600px;"></ul>
+    <ul id="list2" style="margin-left: 600px;"></ul>
+
+    <script>
+
+        var color = ["red","blue","green","purple","Orange",'gray','pink'];
+        var i = 0;
+        function fun()
+        {
+            if (color.length==i)
+            {
+                i=0;
+            }
+            hed.style.color=color[i];
+            i++;
+        }
+        setInterval(fun,200);
+//////////////////////////////////////////////////////////////////////
+
+        //var color = ['red','green','blue','pink','orange'];
+        var count = 0;
+
+        function colors()
+        {
+            var li = document.createElement('li');
+            var val = document.createTextNode(color[count]);
+            li.appendChild(val);
+            li.style.color=color[count];
+            list1.appendChild(li);
+            if(count == color.lenght-1)
+            {
+                count = 0;
+            }
+                count++;  
+        }
+
+//////////////////////////////////////////////////////////////////////////
+        var j = 0;
+        function numbers()
+        {
+            j++;
+            if(j<6)
+            {
+                var li = document.createElement('li');
+                var val = document.createTextNode(j);
+                li.appendChild(val);
+                li.style.color=color[j];
+                list2.appendChild(li);
+            }
+            else
+            {
+                alert("List is Full Now");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

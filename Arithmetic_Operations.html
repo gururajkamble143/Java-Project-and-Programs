@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> New Document </title>
+  
+    <script>
+
+        var div;
+      
+  function add()
+  {
+  var a=parseInt(form1.no1.value);
+  var b=parseInt(form1.no2.value);
+  d1.innerHTML=" Addition is " +(a+b);
+   
+  }
+function sub()
+  {
+  var a=parseInt(form1.no1.value);
+  var b=parseInt(form1.no2.value);
+  d1.innerHTML="substraction is " +(a-b);
+   
+  }
+
+  function mul()
+  {
+  var a=parseInt(form1.no1.value);
+  var b=parseInt(form1.no2.value);
+  d1.innerHTML="Multiplication is " +(a*b); 
+  }
+
+  
+
+  function clear1()
+  {
+	  //alert('hi');
+	form1.no1.value="";
+	form1.no2.value="";
+	d1.innerHTML=null;
+  }
+  </script>
+ </head>
+ <body>
+  <form name='form1'>
+
+  Enter No1 :- <input type='text' name='no1'>
+  Enter No2 :- <input type='text' name='no2'>
+  <div id="d1" style="background-color:white;color:black;padding:2px;">
+    Result :- <input type='text' name='res'>
+  </div>
+
+  <input type='button' value='Add' onclick='add()'>
+  <input type='button' value='Sub' onclick='sub()'>
+  <input type='button' value='Mul' onclick='mul()'>
+  <input type='button' value='Clear' onclick='clear1()'>
+
+ </body>
+</html>

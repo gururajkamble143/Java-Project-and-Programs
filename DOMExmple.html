@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM concept Example</title>
+
+    <style>
+        #btn
+        {
+            width: 200px;
+            height: 50px;
+            background: pink;
+            display: flex;
+            margin: 10px auto;
+        }
+        #btn button
+        {
+            margin: 5px auto;
+            color: gray;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        function fun()
+        {
+            //calling by Element ID
+        // var c = document.getElementById('p1');
+        // alert(c.innerHTML);
+        // var c1 = document.getElementById('p2').innerHTML;
+        // alert(c1);
+
+            //calling by element tag name
+        //var c = document.getElementsByTagName('p');
+        // alert(c[0].innerHTML);
+
+        // var txt = " ";
+        //     for(var i=0;i<c.length;i++)
+        //     {
+        //         txt +=c[i].innerHTML;
+        //     }
+        //     document.getElementById('p3').innerHTML = txt;
+
+            var c = document.getElementsByClassName('Example');
+
+            for(var i=0;i<c.length;i++)
+            {
+            c[i].style.border="4px solid red";
+            c[i].style.fontSize="20px";
+            c[i].style.color="Yellow";
+            }
+        }
+
+        function over()
+        {
+            var c = document.getElementsByClassName('Example');
+            for(var i=0;i<c.length;i++)
+            {
+            c[i].style.border="6px dashed red";
+            c[i].style.fontSize="20px";
+            c[i].style.color="pink";
+            }
+        }
+
+        function out()
+        {
+            var c = document.getElementsByClassName('Example');
+            for(var i=0;i<c.length;i++)
+            {
+            c[i].style.border="none";
+            c[i].style.null;
+            c[i].style.color="pink";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- <p id="p1">Welcome to JAVASCRIPT Program</p>
+
+    <p id="p2">JAVASCRIPT</p>
+
+    <p id="p3"></p> -->
+
+    <div id="btn">
+        <button onclick="over()">Add Style</button>
+        <button onclick="out()">Remove Style</button>
+    </div>
+
+    <div class="Example" onmouseenter="fun1()" onmouseout="fun2()">
+        <p>This is para one</p>
+    </div>
+    <div class="Example1">
+        <p>This is para two</p>
+    </div>
+    <div class="Example" onmouseenter="fun1()" onmouseout="fun2()">
+        <p>This is para three</p>
+    </div>
+    <div class="Example1">
+        <p>This is para four</p>
+    </div>
+    <div class="Example" onmouseenter="fun1()" onmouseout="fun2()">
+        <p>This is para five</p>
+    </div>
+    <div class="Example1">
+        <p>This is para six</p>
+    </div>
+    <div class="Example" onmouseenter="fun1()" onmouseout="fun2()">
+        <p>This is para seven</p>
+    </div>
+
+    //<button onclick="fun()">Click Me</button>
+
+    <p id="p3"></p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+body
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            background-image: url(luffffy.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .homeImg
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            background-image: url(homepage.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .LogInPage
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            background-image: url(logInpage.png);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .SignUppage
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            background-image: url(signuppage.png);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .signUp 
+        {
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+            background: rgba(13, 80, 119, 0.877);
+            padding: 20px;
+            margin: 8% auto 0;
+            text-align: center;
+        }
+        .signUp h1
+        {
+            color: rgba(245, 21, 21, 0.856);
+            margin-bottom: 30px;
+        }
+        .signUphome
+        {
+            width: 400px;
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+            background: rgba(223, 230, 233, 0.863);
+            padding: 20px;
+            margin: 8% auto 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .input-box
+        {
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px 0px;
+            width: 90%;
+            border: 1px solid gray;
+            outline: none;
+        }
+        button
+        {
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            margin: 10px 0px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .signupbtn
+        {
+            background-color: #119bd1;
+        }
+        .Tsignupbtn
+        {
+            background-color: #21afde;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        hr
+        {
+            margin-top: 20px;
+            width: 80%;
+        }
+        .or
+        {
+            background: #fff;
+            width: 30px;
+            margin: -19px auto 10px;
+        }
+        img
+        {
+            width: 70px;
+            margin-top: -50px;
+        }
+        .TYLogin
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            padding: 250px; 
+        }

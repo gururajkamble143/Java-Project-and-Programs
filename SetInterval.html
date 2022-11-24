@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <h1 id="hed">Hero</h1>
+
+    <script>
+
+        var color = ["red","blue","green","purple","Orange"];
+        var i = 0;
+        function fun()
+        {
+            if (color.length==i)
+            {
+                i=0;
+            }
+            hed.style.color=color[i];
+            i++;
+        }
+        setInterval(fun,1000);
+
+    </script>
+    
+</body>
+</html>

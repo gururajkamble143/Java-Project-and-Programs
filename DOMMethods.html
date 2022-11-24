@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM methods</title>
+    <style>
+
+        #d1
+        {
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <button id="btn1">Add New PARA</button>
+    <button id="btn2">Remove PARA</button>
+    <div id="d1"></div>
+
+    <script type="text/javaScript">
+
+        document.getElementById("btn1").addEventListener("mouseover",fun1)
+        document.getElementById("btn2").addEventListener("mouseout",fun2)
+
+        var newdiv;
+
+        function fun1() 
+        {
+            var para = document.createElement('p');
+            newdiv = document.createElement("div");
+            
+
+            newdiv.style.border="2px solid red";
+            newdiv.style.width="300px";
+            newdiv.style.height="300px";
+            para.innerHTML="This is PARA";
+            para.style.color="blue";
+            newdiv.appendChild(para);
+            document.body.append(newdiv);
+        }
+
+
+        function fun2() 
+        {
+            newdiv.remove();
+        }
+        
+
+    </script>
+
+</body>
+</html>

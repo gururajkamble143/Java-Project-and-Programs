@@ -1,0 +1,62 @@
+<html>
+
+<body>
+    <form name="f1" action="success.html">
+    <table align="center" cellpadding="5">
+        <tr>
+            <td>Enter Username</td>
+            <td><input type="text" name="Uname" onfocus="fun()" onblur="fun1()" autocomplete="off"></td>
+            <td id="err2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="err"></td>
+        </tr>
+        <tr>
+            <td>Enter Email</td>
+            <td><input type="email" name="email" autocomplete="off"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="err1"></td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit">Subumit</button></td>
+        </tr>
+    </table>
+    </form>
+</body>
+
+<script>
+    function fun()
+    {
+        f1.uname.style.border="2px solid black";
+    }
+    function fun1()
+    {
+        var p2 ='(^[A-Z]{1,1})+([a-z]{1,10})$'
+        var u =f1.uname.value;
+
+        if(u.match(p2))
+        {
+            err2.innerHTML="correct";
+            err.style.color="green";
+            f1.email.focus();
+        }
+        else
+        {
+            err.innerHTML="Please fill correct uname!!!";
+            //err2.innerHTML="";
+            //f1.uname.value="";
+            err.style.color="red";
+            f1.email.focus();
+        }
+    }
+</script>
+
+</html>

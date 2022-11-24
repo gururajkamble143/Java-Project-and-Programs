@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Practice</title>
+    <script type="text/javascript">
+        var arr=[10];
+        var i,j,search_no;
+        for(i=0;i<=5;i++)
+        {
+            arr[i]= parseInt(prompt());
+        }
+        console.log("Array numbers : ");
+
+        for(let i of arr)
+        {
+            console.log(i);
+        }
+        search_no = parseInt(prompt("Enter the number you want to search : "));
+
+        var n = arr.indexOf(search_no);
+        if(n==-1)
+        {
+            console.log("Number is not found in the Array");
+        }
+        else
+        {
+            console.log(`Number is present at ${n} Location`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

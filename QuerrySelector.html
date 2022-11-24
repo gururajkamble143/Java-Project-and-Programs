@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Querry Selector Demo</title>
+    <script>
+
+        //query selector
+        // function f1()
+        // {
+        //     var v = document.querySelector('p');
+        //     alert(v);
+        //     alert(v.innerHTML);
+        // }
+
+        //query selector all
+        function f1()
+        {
+            var v = document.querySelectorAll('p');
+            alert(v);
+            alert(v.innerHTML);
+            alert(v[0].innerHTML);
+        }
+
+    </script>
+</head>
+<body onload="f1()">
+    
+    <p>Querry Selector Example</p>
+    <p>Querry Selector Example 1</p>
+
+</body>
+</html>

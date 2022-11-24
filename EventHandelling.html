@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Handelling</title>
+
+    <script>
+
+        //Event handelling = onclick, onmouseover, onmouseout, onmouseseenter, onmouseleave, onkeypress, onkeyup,
+        // onkeydown, onfocus, onblur, onload, onselect, ondblclick.
+
+        function clickfun()
+        {
+            alert("Clicked on Click event Button")
+        }
+        clickfun();
+
+        function mouseover()
+        {
+            alert("Placed Mouse over Button")
+        }
+        mouseover();
+
+        function mouseout()
+        {
+            alert("Placed Mouse out Button")
+        }
+        mouseout();
+
+        function mouseleave()
+        {
+            alert("removed Mouse from mouse leave Button")
+        }
+        mouseleave();
+
+        function doubleclick()
+        {
+            alert("double clicked on double clicked Button")
+        }
+        doubleclick();
+
+        function mouseenter()
+        {
+            alert("Placed Mouseenter event Button")
+        }
+        mouseenter();
+
+
+    </script>
+
+</head>
+<body>
+    
+    <input type="text"><br><br>
+    <button onclick="clickfun()">Click Event Button</button>
+    <button onmouseover="mouseover()">Mouse Over Button</button>
+    <button onmouseout="mouseout()">Mouseout Button event</button>
+    <button onmouseleave="mouseleave()">Mouseleaveclick Event button</button>
+    <button ondblclick="doubleclick()">dblclick Event Button</button>
+    <button onmouseenter="mouseenter()">MouseEnter Event Button</button>
+
+</body>
+</html>

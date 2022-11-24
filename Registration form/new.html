@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href="Registration.css" rel="stylesheet" type="text/css">
+</head>
+<body class="LogInPage">
+    <div class="signUp">
+        <img src="usr2.png">
+        <h1>Log In here</h1>
+        <form>
+            <!-- for Email -->
+            <tr>
+                <td></td>
+            <td><input type="email" name="Email"  class="input-box" placeholder="Your Email" onblur="onBlurEmail()" onfocus="onFocusEmail()"></td>
+            <td class="check hidden" id="checkEmail"></td>
+            </tr>
+            <!-- for Email Error -->
+            <tr>
+                <td></td>
+                <td class="error" id="errorEmail"></td>
+              </tr>
+              <!-- for password -->
+            <tr>
+                <td></td>
+            <td><input type="password" name="Password" class="input-box" placeholder="Your Password" onblur="onBlurPassword()" onfocus="onFocusPassword()"></td>
+            <td class="check hidden" id="checkPassword"></td>
+            </tr>
+            <!-- for password Error -->
+            <tr>
+                <td></td>
+                <td class="error" id="errorPassword"></td>
+              </tr>
+
+            <p><span><input type="checkbox"></span> agree to the terms and conditions</p>
+            <button type="button" class="signupbtn" onclick="window.location.href = 'new2Log.html';">Log In</button>
+            <hr>
+            <p class="or">OR</p>
+            <button type="button" class="Tsignupbtn" onclick="window.location.href = 'https://twitter.com/i/flow/login';">Log In with twitter</button>
+            <p>Don't have an Account ?<a href="new1.html">Sign Up</a></p>
+
+        </form>
+    </div>
+</body>
+<script src="signup.js"></script>
+</html>
